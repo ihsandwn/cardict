@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#859aff",
+              "outline": "#74739e",
+              "surface-tint": "#0846ed",
+              "surface-container-high": "#e2dfff",
+              "on-error": "#ffefef",
+              "secondary": "#545b6f",
+              "on-error-container": "#510017",
+              "error-container": "#f74b6d",
+              "on-tertiary-fixed-variant": "#6a1460",
+              "on-primary-fixed": "#000000",
+              "on-background": "#2b2a51",
+              "outline-variant": "#aba9d7",
+              "secondary-fixed": "#dbe2fa",
+              "background": "#f9f5ff",
+              "on-primary": "#f2f1ff",
+              "on-secondary-fixed": "#383f52",
+              "secondary-fixed-dim": "#cdd4eb",
+              "on-primary-container": "#001867",
+              "secondary-dim": "#484f63",
+              "on-surface-variant": "#585781",
+              "tertiary-dim": "#832c76",
+              "tertiary-fixed": "#f790e0",
+              "surface-dim": "#d2d0ff",
+              "surface-variant": "#dcd9ff",
+              "on-secondary-fixed-variant": "#545b6f",
+              "surface-container-low": "#f2efff",
+              "secondary-container": "#dbe2fa",
+              "on-tertiary": "#ffeef6",
+              "primary-dim": "#003cd3",
+              "primary": "#0846ed",
+              "tertiary-fixed-dim": "#e883d2",
+              "surface-container-highest": "#dcd9ff",
+              "on-secondary": "#f0f2ff",
+              "tertiary-container": "#f790e0",
+              "on-tertiary-fixed": "#380033",
+              "surface-bright": "#f9f5ff",
+              "primary-container": "#859aff",
+              "on-tertiary-container": "#5f0656",
+              "surface-container": "#e9e5ff",
+              "inverse-surface": "#0a082f",
+              "inverse-primary": "#6d88ff",
+              "surface": "#f9f5ff",
+              "inverse-on-surface": "#9a99c6",
+              "error-dim": "#a70138",
+              "primary-fixed-dim": "#718bff",
+              "error": "#b41340",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#2b2a51",
+              "on-secondary-container": "#4a5165",
+              "tertiary": "#913983",
+              "on-primary-fixed-variant": "#00207e"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl no-border bg-gradient-to-b from-white to-transparent">
+<nav class="flex justify-between items-center w-full px-12 h-20 max-w-[1920px] mx-auto font-['Plus_Jakarta_Sans'] tracking-tight">
+<div class="text-2xl font-black tracking-tighter text-slate-900">AZURE KINETIC</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-slate-600 font-medium hover:text-[#2E5BFF] transition-colors duration-300" href="#">Collections</a>
+<a class="text-slate-600 font-medium hover:text-[#2E5BFF] transition-colors duration-300" href="#">New Arrivals</a>
+<a class="text-slate-600 font-medium hover:text-[#2E5BFF] transition-colors duration-300" href="#">The Atelier</a>
+<a class="text-slate-600 font-medium hover:text-[#2E5BFF] transition-colors duration-300" href="#">Sustainability</a>
+<a class="text-slate-600 font-medium hover:text-[#2E5BFF] transition-colors duration-300" href="#">Archive</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="hover:text-[#2E5BFF] transition-all"><span class="material-symbols-outlined" data-icon="favorite">favorite</span></button>
+<button class="hover:text-[#2E5BFF] transition-all"><span class="material-symbols-outlined" data-icon="person">person</span></button>
+<button class="relative text-[#2E5BFF] border-b-2 border-[#2E5BFF] pb-1 font-bold">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-1 -right-2 bg-[#2E5BFF] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-20 px-12 max-w-[1920px] mx-auto min-h-screen">
+<!-- Header Section -->
+<div class="mb-16">
+<div class="flex items-baseline gap-4">
+<h1 class="text-6xl font-extrabold tracking-tighter text-on-background">Shopping Bag</h1>
+<span class="text-2xl font-light text-outline">(3 items)</span>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-16 items-start">
+<!-- Left Side: Items List -->
+<div class="col-span-12 lg:col-span-8 space-y-12">
+<!-- Product Item 1 -->
+<div class="group relative flex gap-8 items-center pb-12 border-b border-outline-variant/20 transition-all duration-500">
+<div class="w-48 h-64 overflow-hidden rounded-xl bg-surface-container-low flex-shrink-0">
+<img alt="Product" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist high-fashion beige trench coat editorial photography against a clean studio background with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiwLOzoCrYWf93k6HL5ZsM_CcbvUnP2ArVNtMh1oJS_9_aCN8KcCbkBH3hSFxqbkq3atLCok75ZqJhJNvm6uX9fBcPU7gEIjq06BjEYOksIR6zTegFCYwYt8ss-c4iwJrhDHdlR7Bx8p4TUQnEVFm7t7QZ58BHIjJdYWAPVH0NQ7z8sWcW5zLlaADx6gTTD2NqFvZ9Ukss0ftazZ0hxITpakbhP8Od6hnnZtsxwMB9QHzTwMOzxqDiI5zpOQSTCrckdfDvyZia5pfd"/>
+</div>
+<div class="flex-grow flex flex-col justify-between h-64 py-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-2xl font-bold tracking-tight text-on-background mb-1">Kinetic Oversized Trench</h3>
+<p class="text-outline text-sm uppercase tracking-widest font-medium">Atelier Series — Stone</p>
+</div>
+<p class="text-2xl font-medium text-on-background">$890.00</p>
+</div>
+<div class="flex items-center gap-12">
+<div>
+<p class="text-xs text-outline uppercase tracking-widest mb-2">Size</p>
+<div class="px-4 py-2 bg-surface-container-low rounded-full text-sm font-bold">Medium</div>
+</div>
+<div>
+<p class="text-xs text-outline uppercase tracking-widest mb-2">Quantity</p>
+<div class="flex items-center gap-4 bg-surface-container-low rounded-full px-3 py-2">
+<button class="hover:text-primary"><span class="material-symbols-outlined text-sm" data-icon="remove">remove</span></button>
+<span class="text-sm font-bold w-4 text-center">1</span>
+<button class="hover:text-primary"><span class="material-symbols-outlined text-sm" data-icon="add">add</span></button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite">favorite</span>
+                                Move to favorites
+                            </button>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="close">close</span>
+                                Remove
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Item 2 -->
+<div class="group relative flex gap-8 items-center pb-12 border-b border-outline-variant/20 transition-all duration-500">
+<div class="w-48 h-64 overflow-hidden rounded-xl bg-surface-container-low flex-shrink-0">
+<img alt="Product" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Contemporary sustainable black knit sweater with intricate texture detail soft lighting on light grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Toej_8FShoBCtp_NqpydHZ_XCPv-6NHbjT3wfzYfboNTWXewIETu-BOQklQH2Y1WTgFo6LiwQFzO7dLCeBUF3EOTbo2MuaZrP3WZBRHaPWrxXamrzVIX5irqcIunI43FMspV3ObPJJddXp3YaxrhbHil_8X6hSLanW_hrNHpaMfYG0cbtI1bHKsjg3EpJPNyQ0EGk8J5H2o4FgrcST3--2mOVkkQViaOPT-aSGCZH_ugArNpP1CZPl3u3_GPOiIv8jKQhUTfGM8R"/>
+</div>
+<div class="flex-grow flex flex-col justify-between h-64 py-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-2xl font-bold tracking-tight text-on-background mb-1">Recycled Merino Knit</h3>
+<p class="text-outline text-sm uppercase tracking-widest font-medium">Sustainability Lab — Noir</p>
+</div>
+<p class="text-2xl font-medium text-on-background">$450.00</p>
+</div>
+<div class="flex items-center gap-12">
+<div>
+<p class="text-xs text-outline uppercase tracking-widest mb-2">Size</p>
+<div class="px-4 py-2 bg-surface-container-low rounded-full text-sm font-bold">Small</div>
+</div>
+<div>
+<p class="text-xs text-outline uppercase tracking-widest mb-2">Quantity</p>
+<div class="flex items-center gap-4 bg-surface-container-low rounded-full px-3 py-2">
+<button class="hover:text-primary"><span class="material-symbols-outlined text-sm" data-icon="remove">remove</span></button>
+<span class="text-sm font-bold w-4 text-center">1</span>
+<button class="hover:text-primary"><span class="material-symbols-outlined text-sm" data-icon="add">add</span></button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite">favorite</span>
+                                Move to favorites
+                            </button>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="close">close</span>
+                                Remove
+                            </button>
+</div>
+</div>
+</div>
+<!-- Product Item 3 -->
+<div class="group relative flex gap-8 items-center pb-12 transition-all duration-500">
+<div class="w-48 h-64 overflow-hidden rounded-xl bg-surface-container-low flex-shrink-0">
+<img alt="Product" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Avant-garde designer footwear blue suede loafers on high contrast minimalist background editorial fashion shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmXLBFJlplXK_aT-68Pp4oKFUNp1j6l08jQz59noqK-Pj2JIQDS4clc_-egstBfmDvBQB92MRD3k4xakuUAseTjLb87bBsFoIOQqizd3lO13DjpoZvtvMNbYekkhRnrGQR2aMAU-ZamLkpcEvBR8x74_OztV38ROwprfmTu_RZYBLDiRgvORNzDxN6X3qHKkCke-rXnlg7nE6Pgpd9nyZt8Jt5hs3aD3sRPfbYEpHl-TcA3wOrmF83wMRIigvnUCAEfAVfaWKRiXF8"/>
+</div>
+<div class="flex-grow flex flex-col justify-between h-64 py-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-2xl font-bold tracking-tight text-on-background mb-1">Azure Cobalt Loafers</h3>
+<p class="text-outline text-sm uppercase tracking-widest font-medium">Footwear Lab — Kinetic Blue</p>
+</div>
+<p class="text-2xl font-medium text-on-background">$520.00</p>
+</div>
+<div class="flex items-center gap-12">
+<div>
+<p class="text-xs text-outline uppercase tracking-widest mb-2">Size</p>
+<div class="px-4 py-2 bg-surface-container-low rounded-full text-sm font-bold">42 IT</div>
+</div>
+<div>
+<p class="text-xs text-outline uppercase tracking-widest mb-2">Quantity</p>
+<div class="flex items-center gap-4 bg-surface-container-low rounded-full px-3 py-2">
+<button class="hover:text-primary"><span class="material-symbols-outlined text-sm" data-icon="remove">remove</span></button>
+<span class="text-sm font-bold w-4 text-center">1</span>
+<button class="hover:text-primary"><span class="material-symbols-outlined text-sm" data-icon="add">add</span></button>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="favorite">favorite</span>
+                                Move to favorites
+                            </button>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-lg" data-icon="close">close</span>
+                                Remove
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Order Summary -->
+<div class="col-span-12 lg:col-span-4 sticky top-32">
+<div class="bg-surface-container-lowest p-10 rounded-[2rem] shadow-none border border-outline-variant/10">
+<h2 class="text-2xl font-bold tracking-tight text-on-background mb-8">Order Summary</h2>
+<div class="space-y-6 mb-10">
+<div class="flex justify-between items-center text-on-surface-variant font-medium">
+<span>Subtotal</span>
+<span class="text-on-background">$1,860.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-medium">
+<span>Estimated Shipping</span>
+<span class="text-on-background font-bold text-primary">FREE</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-medium">
+<span>Tax</span>
+<span class="text-on-background">$148.80</span>
+</div>
+<div class="pt-6 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="text-xl font-bold">Total</span>
+<span class="text-3xl font-black text-[#2E5BFF]">$2,008.80</span>
+</div>
+</div>
+<!-- Promo Code -->
+<div class="mb-10">
+<label class="block text-xs font-bold uppercase tracking-widest text-outline mb-3">Promo Code</label>
+<div class="relative">
+<input class="w-full h-14 bg-surface-container-high border-none rounded-xl px-6 font-medium focus:ring-2 focus:ring-primary/20 placeholder:text-outline/50 transition-all" placeholder="Enter code" type="text"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-[#2E5BFF] font-bold text-sm uppercase tracking-wider hover:opacity-70">Apply</button>
+</div>
+</div>
+<button class="w-full h-20 bg-gradient-to-br from-primary to-primary-container text-white rounded-xl font-bold text-lg tracking-tight hover:scale-[1.02] transition-all shadow-lg shadow-primary/20">
+                        Proceed to Checkout
+                    </button>
+<p class="mt-6 text-center text-xs text-outline font-medium">
+                        Standard shipping takes 2-4 business days. <br/>Returns are complimentary within 30 days.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Recently Viewed Section -->
+<section class="mt-32 pt-20 border-t border-outline-variant/20">
+<h2 class="text-4xl font-extrabold tracking-tighter text-on-background mb-12">Recently Viewed</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+<!-- Rec Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6 relative">
+<img alt="Recent Item" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s]" data-alt="Editorial fashion photography of a yellow designer dress on a modern minimalist model against a stark studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeQxONl1tBCND9sUZdVdPdmiMLQLGgFsDsUDY9YcCnaYCdFYTOIRZqRs3fmFem7kpPPHV35b0la6c5wJcZ1QRYZWgC3YHUzTmveS_2jyf0loeIkdKdzXErp8t9Wg8V2jk0Nc7XOmBkcN5G30DltJ0H6N77y4yp1WOD6QKas-4bPJHMNO_VyXYWNUjBfL4DM2L7F_uy8DUkg0gKPAnZpNhGDN9d34crhC7E_kFC5_Qmnjb-x5zAMCglKNkTOBkmNtNGK-U_BO2wBZOk"/>
+<div class="absolute top-4 right-4 p-2 bg-white/50 backdrop-blur-md rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-on-background" data-icon="favorite">favorite</span>
+</div>
+</div>
+<p class="text-xs text-outline uppercase tracking-widest mb-1">New Arrivals</p>
+<h4 class="font-bold tracking-tight text-on-background group-hover:text-primary transition-colors">Silk Flare Trousers</h4>
+<p class="font-medium text-sm mt-1">$320.00</p>
+</div>
+<!-- Rec Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6 relative">
+<img alt="Recent Item" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s]" data-alt="Modern high-end mens blazer in navy wool professional studio lighting editorial aesthetic sharp tailoring" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0SaEqX5so_Zhvrnw7S8jnm5GrWu10CznAsXyErcd-jSWww-Cglt08vwGRg-p53BgnTS3md_kp-f3mrWaFHbigIUxYqNzDnXFIkzXZViHyOxUmQC-pUrKnr8j0VKgbqAiyNSF0g1e5C0OdBUZG_2MqVKkg-nLmzrDJQ4yRYVdyWQAQLNoEciTKb0nOHAhLJUdnjpUAHH7ib9fhgccpFefy21mDBbxW5OUem_cx0M6qDqSFc6U6u4JaydEwEWI3oca2G5yY1lcZHa_A"/>
+<div class="absolute top-4 right-4 p-2 bg-white/50 backdrop-blur-md rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-on-background" data-icon="favorite">favorite</span>
+</div>
+</div>
+<p class="text-xs text-outline uppercase tracking-widest mb-1">Archive</p>
+<h4 class="font-bold tracking-tight text-on-background group-hover:text-primary transition-colors">Sculptural Blazer</h4>
+<p class="font-medium text-sm mt-1">$1,200.00</p>
+</div>
+<!-- Rec Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6 relative">
+<img alt="Recent Item" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s]" data-alt="Minimalist luxury white sneakers on platform architectural composition soft shadows bright clean lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRK8sc6l-eh3-jhE71b8vqXgC6EY7zI_UQ6PX08tUWIy0oAHfYRjKll4d6jlztHhsNZt3MB6EQLi7o9hSJl3PdUl1ysQ4pQmI9xuf2LrjLWGdb7TxdTgn7FBUmr4lBh6eYkwS5vNlHKJ2gMosbx7yP987vRdPjB1Hl2Yt7sqYD_xTlFZeg51TN-qGVDjFtXmY4xfzsmexS1-oQQit1UPmkY4Az03IN1lQioihAPZhNWoXFs92h8FmRATS876_WW6EH0hlnTKdn7PAO"/>
+<div class="absolute top-4 right-4 p-2 bg-white/50 backdrop-blur-md rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-on-background" data-icon="favorite">favorite</span>
+</div>
+</div>
+<p class="text-xs text-outline uppercase tracking-widest mb-1">Footwear Lab</p>
+<h4 class="font-bold tracking-tight text-on-background group-hover:text-primary transition-colors">Aerodynamic Sneakers</h4>
+<p class="font-medium text-sm mt-1">$380.00</p>
+</div>
+<!-- Rec Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6 relative">
+<img alt="Recent Item" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s]" data-alt="Contemporary minimalist beige t-shirt photography showcasing premium cotton texture on subtle tinted background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyELHdWjvj94FoRKawqvn8iBG-Lxks-nR7AfI18GpYB7QtD4IV7dStElq8ts6ZA8bT_PyACpOwcVMYug0S9rCL7pmsCXa_3uFPRAq6Gz4rhvRRIS9DOnVR21wJBJUpY3GXciYBYs_F9qjDZDDgaaobefJw9ScEUCvD4sdD00eQ1z16bjTF23JEJNfxK71iIq7-pI_IC9FwhuhYNRdB2HWIi7tG1qvAQsHUL3yNUDFKGh6_Pf7eCVdU53Z61TfS2kWigdX1hiSw1-a0"/>
+<div class="absolute top-4 right-4 p-2 bg-white/50 backdrop-blur-md rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-on-background" data-icon="favorite">favorite</span>
+</div>
+</div>
+<p class="text-xs text-outline uppercase tracking-widest mb-1">Sustainability</p>
+<h4 class="font-bold tracking-tight text-on-background group-hover:text-primary transition-colors">Organic Cotton Tee</h4>
+<p class="font-medium text-sm mt-1">$120.00</p>
+</div>
+<!-- Rec Card 5 -->
+<div class="group cursor-pointer hidden lg:block">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6 relative">
+<img alt="Recent Item" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[1.5s]" data-alt="High-fashion model wearing futuristic chrome accessories and minimal black clothing avant-garde fashion photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuHXhOt_KlQbCquHmzGSgdTRi6Tf-Kt8Khp8dr8n_rTt4GRluBLnjdNwcrEh7Uv39B_ObfBMUClzs-dZGv2lnt9KhMTvF8J6fCT-d8vcVpLw8gOJNV-pXxInR_2Ie9AvrJL6ASx8ciup_6iNOFXUcTFWnosH_h7Bjieah98BieF6wmcfs776c39GNztGss0WIqZXBY6UgrAle4MbDJzFrKscwDpSNegs40OPidJSSP7BqqyoANJHvSF5UvzvROIaiOOU9yR7mgbLdJ"/>
+<div class="absolute top-4 right-4 p-2 bg-white/50 backdrop-blur-md rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-on-background" data-icon="favorite">favorite</span>
+</div>
+</div>
+<p class="text-xs text-outline uppercase tracking-widest mb-1">Atelier</p>
+<h4 class="font-bold tracking-tight text-on-background group-hover:text-primary transition-colors">Chrome Accent Scarf</h4>
+<p class="font-medium text-sm mt-1">$210.00</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full rounded-t-[2rem] mt-20 tonal-shift bg-[#f2efff]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-[1920px] mx-auto font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest">
+<div class="space-y-6">
+<div class="text-xl font-bold text-slate-900">AZURE KINETIC</div>
+<p class="text-slate-500 normal-case tracking-normal">Redefining the digital atelier through editorial fluidity and technological precision.</p>
+</div>
+<div class="space-y-4">
+<h5 class="text-slate-900 font-bold mb-6">Explore</h5>
+<a class="block text-slate-500 hover:text-slate-900 transition-all" href="#">Our Story</a>
+<a class="block text-slate-500 hover:text-slate-900 transition-all" href="#">The Atelier</a>
+<a class="block text-slate-500 hover:text-slate-900 transition-all" href="#">Sustainability Report</a>
+</div>
+<div class="space-y-4">
+<h5 class="text-slate-900 font-bold mb-6">Client Service</h5>
+<a class="block text-slate-500 hover:text-slate-900 transition-all" href="#">Contact Us</a>
+<a class="block text-slate-500 hover:text-slate-900 transition-all" href="#">Shipping &amp; Returns</a>
+<a class="block text-slate-500 hover:text-slate-900 transition-all" href="#">Track Order</a>
+</div>
+<div class="space-y-4">
+<h5 class="text-slate-900 font-bold mb-6">Legal</h5>
+<a class="block text-slate-500 hover:text-slate-900 transition-all" href="#">Privacy Policy</a>
+<a class="block text-slate-500 hover:text-slate-900 transition-all" href="#">Terms of Service</a>
+<a class="block text-slate-500 hover:text-slate-900 transition-all" href="#">Accessibility</a>
+</div>
+</div>
+<div class="px-12 py-10 border-t border-white/20 text-center">
+<p class="text-[10px] text-slate-400 font-bold tracking-[0.2em]">© 2024 AZURE KINETIC ATELIER. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+</body></html>

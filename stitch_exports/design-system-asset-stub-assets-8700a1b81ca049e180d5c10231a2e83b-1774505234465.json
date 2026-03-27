@@ -1,0 +1,23 @@
+{
+  "project_id": "10645692551860150202",
+  "design_system_asset_id": "assets/8700a1b81ca049e180d5c10231a2e83b",
+  "screen_instance_id": "asset-stub-assets-8700a1b81ca049e180d5c10231a2e83b-1774505234465",
+  "display_name": "Azure Kinetic",
+  "theme": {
+    "color_mode": "LIGHT",
+    "headline_font": "PLUS_JAKARTA_SANS",
+    "body_font": "INTER",
+    "label_font": "INTER",
+    "roundness": "ROUND_EIGHT",
+    "primary_color": "#0846ed",
+    "primary_container": "#859aff",
+    "surface": "#f9f5ff",
+    "surface_container_low": "#f2efff",
+    "surface_container_lowest": "#ffffff",
+    "on_surface": "#2b2a51",
+    "tertiary": "#913983",
+    "outline": "#74739e"
+  },
+  "notes": "Full Design MD is available in Stitch project metadata via MCP list_design_systems/get_project responses."
+}
+

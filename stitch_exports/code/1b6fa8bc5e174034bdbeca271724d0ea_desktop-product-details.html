@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AZURE KINETIC | The Atelier Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary-fixed": "#859aff",
+                "outline": "#74739e",
+                "surface-tint": "#0846ed",
+                "surface-container-high": "#e2dfff",
+                "on-error": "#ffefef",
+                "secondary": "#545b6f",
+                "on-error-container": "#510017",
+                "error-container": "#f74b6d",
+                "on-tertiary-fixed-variant": "#6a1460",
+                "on-primary-fixed": "#000000",
+                "on-background": "#2b2a51",
+                "outline-variant": "#aba9d7",
+                "secondary-fixed": "#dbe2fa",
+                "background": "#f9f5ff",
+                "on-primary": "#f2f1ff",
+                "on-secondary-fixed": "#383f52",
+                "secondary-fixed-dim": "#cdd4eb",
+                "on-primary-container": "#001867",
+                "secondary-dim": "#484f63",
+                "on-surface-variant": "#585781",
+                "tertiary-dim": "#832c76",
+                "tertiary-fixed": "#f790e0",
+                "surface-dim": "#d2d0ff",
+                "surface-variant": "#dcd9ff",
+                "on-secondary-fixed-variant": "#545b6f",
+                "surface-container-low": "#f2efff",
+                "secondary-container": "#dbe2fa",
+                "on-tertiary": "#ffeef6",
+                "primary-dim": "#003cd3",
+                "primary": "#0846ed",
+                "tertiary-fixed-dim": "#e883d2",
+                "surface-container-highest": "#dcd9ff",
+                "on-secondary": "#f0f2ff",
+                "tertiary-container": "#f790e0",
+                "on-tertiary-fixed": "#380033",
+                "surface-bright": "#f9f5ff",
+                "primary-container": "#859aff",
+                "on-tertiary-container": "#5f0656",
+                "surface-container": "#e9e5ff",
+                "inverse-surface": "#0a082f",
+                "inverse-primary": "#6d88ff",
+                "surface": "#f9f5ff",
+                "inverse-on-surface": "#9a99c6",
+                "error-dim": "#a70138",
+                "primary-fixed-dim": "#718bff",
+                "error": "#b41340",
+                "surface-container-lowest": "#ffffff",
+                "on-surface": "#2b2a51",
+                "on-secondary-container": "#4a5165",
+                "tertiary": "#913983",
+                "on-primary-fixed-variant": "#00207e"
+              },
+              fontFamily: {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl no-border bg-gradient-to-b from-white to-transparent shadow-none">
+<div class="flex justify-between items-center w-full px-12 h-20 max-w-[1920px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-slate-900 brand-font">AZURE KINETIC</div>
+<div class="hidden md:flex gap-10">
+<a class="text-[#2E5BFF] border-b-2 border-[#2E5BFF] pb-1 font-bold font-['Plus_Jakarta_Sans'] tracking-tight transition-colors duration-300" href="#">The Atelier</a>
+<a class="text-slate-600 font-medium font-['Plus_Jakarta_Sans'] tracking-tight hover:text-[#2E5BFF] transition-colors duration-300" href="#">Collections</a>
+<a class="text-slate-600 font-medium font-['Plus_Jakarta_Sans'] tracking-tight hover:text-[#2E5BFF] transition-colors duration-300" href="#">New Arrivals</a>
+<a class="text-slate-600 font-medium font-['Plus_Jakarta_Sans'] tracking-tight hover:text-[#2E5BFF] transition-colors duration-300" href="#">Sustainability</a>
+<a class="text-slate-600 font-medium font-['Plus_Jakarta_Sans'] tracking-tight hover:text-[#2E5BFF] transition-colors duration-300" href="#">Archive</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-on-background hover:text-primary transition-all">favorite</button>
+<button class="material-symbols-outlined text-on-background hover:text-primary transition-all">person</button>
+<button class="relative material-symbols-outlined text-on-background hover:text-primary transition-all">
+                    shopping_bag
+                    <span class="absolute -top-1 -right-1 w-4 h-4 bg-primary text-[10px] text-white rounded-full flex items-center justify-center font-bold">1</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 max-w-[1920px] mx-auto px-6 md:px-12 lg:px-24">
+<!-- Product Detail Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 xl:gap-24">
+<!-- Left: Product Gallery (Editorial Asymmetry) -->
+<div class="lg:col-span-7 space-y-8">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low group">
+<img alt="Kinetic Silk Overcoat" class="w-full h-[870px] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of a high-end deep blue silk overcoat with intricate weave texture and soft studio lighting reflecting off the fabric fibers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlVHPTtx_2o6kmuGGTUaO37EfeTF9zOXYmgRdS4TWSU7VFd7OC17BZRmrQAzPtCiZNYYRlrRPYXASzmrzIsQRPBNOsm6bY-wQRvf7-iZZ-nftwzYTLX9fuERdrF264EpO9UgsjDeDy1lNbnjmbteOI2HQr3nEnJWgQv6OcS-J3ylT6EecPmsmnsOklqePS3Yc-5ErT7iBNblVShowd0n_nwFm4cyMQ3efFw8G3fPSaawifRl2tkDHFvKgEN0HyeFqr0_dGcAppiKwK"/>
+<div class="absolute top-6 left-6">
+<span class="bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold tracking-widest text-primary uppercase">New In</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="rounded-xl overflow-hidden bg-surface-container-low aspect-[4/5]">
+<img alt="Detail view" class="w-full h-full object-cover" data-alt="Extreme macro shot of luxurious metallic buttons and reinforced stitching on a tailored garment, highlighting precision craftsmanship and premium materials" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2LqYDpi1xLN1NO-K685cqVUGCVc67jlPiMZteCAJPy6gvlgzBt1LmNXFbSZgvixulr_4GcH0CFH9fULsMv4newidaJGTYi3Z6XCyEYIVdqgOD_2zblXyM6Bl1AHDf4EttydP_NxWpvNsxlLX3vyPhNVzb9BfwyXj8B14LprXFYjjIQFkJelsrZu7_AixUUy1RVSqsMn1HJkCc6sVtY4c9hZbaow0JAnb2Mku149RWCj8Db3XnStH6Tq2BmMIpBbqVeBn6zTX73UdJ"/>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container-low aspect-[4/5] translate-y-12">
+<img alt="Lifestyle view" class="w-full h-full object-cover" data-alt="Editorial lifestyle photo of a model wearing a structured blue coat standing against a minimalist concrete architectural background in soft overcast light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqhyp1JhtXJzQa7hYpvJgxQadtdSq34avS31pBSHXRFtQqlwuidS4LmhUZ_-t9t0LsxIpKFha7jci-dAorwbtnFB-mQ_WKExfpcOz2sbWFiDXTi9-HiRR-3jFEA2zO5a_msOqqEyDIIfq0V7nNIZSyRy9LwmyZR1i21adqDX1fUXAPjxmqjBrI6OLUlf3bisPbv08n1TeoAtfAzg0vtiUnN0LYdlOVBbBtvzafqDNautIiEMpbaHt4w6IA0zssQaZQr6V4YgsczXF4"/>
+</div>
+</div>
+</div>
+<!-- Right: Product Info (Sticky Canvas) -->
+<div class="lg:col-span-5 relative">
+<div class="lg:sticky lg:top-32 space-y-10">
+<!-- Title & Price -->
+<header class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold uppercase tracking-[0.2em] text-outline">The Atelier Collection</span>
+<div class="h-[1px] w-8 bg-outline/30"></div>
+</div>
+<h1 class="text-5xl font-black tracking-tighter text-on-surface leading-none">KINETIC SILK OVERCOAT</h1>
+<div class="flex items-baseline gap-4">
+<span class="text-3xl font-light text-primary">$2,450.00</span>
+</div>
+</header>
+<!-- Description -->
+<p class="text-lg text-on-surface-variant leading-relaxed font-light">
+                        A masterclass in fluid structure. Crafted from our signature 400g kinetic-weave silk, this overcoat responds to movement with a subtle color shift. Designed for the modern polymath, it bridges the gap between ceremonial elegance and technical utility.
+                    </p>
+<!-- Selectors -->
+<div class="space-y-8">
+<!-- Color Selector -->
+<div class="space-y-3">
+<label class="text-[10px] font-bold uppercase tracking-widest text-outline">Available Tones</label>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full bg-[#0846ed] ring-2 ring-offset-4 ring-primary outline-none transition-all"></button>
+<button class="w-10 h-10 rounded-full bg-slate-800 hover:ring-2 hover:ring-offset-2 hover:ring-slate-300 transition-all"></button>
+<button class="w-10 h-10 rounded-full bg-slate-200 hover:ring-2 hover:ring-offset-2 hover:ring-slate-300 transition-all"></button>
+</div>
+</div>
+<!-- Size Selector -->
+<div class="space-y-3">
+<div class="flex justify-between items-end">
+<label class="text-[10px] font-bold uppercase tracking-widest text-outline">Select Size</label>
+<button class="text-[10px] uppercase tracking-widest text-primary font-bold border-b border-primary/30">Size Guide</button>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-4 rounded-lg bg-surface-container-low text-on-surface font-medium hover:bg-surface-container-high transition-colors">XS</button>
+<button class="py-4 rounded-lg bg-primary text-on-primary font-bold shadow-lg shadow-primary/20">S</button>
+<button class="py-4 rounded-lg bg-surface-container-low text-on-surface font-medium hover:bg-surface-container-high transition-colors">M</button>
+<button class="py-4 rounded-lg bg-surface-container-low text-on-surface font-medium hover:bg-surface-container-high transition-colors">L</button>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="space-y-4">
+<button class="w-full py-6 rounded-full bg-[#2E5BFF] text-white text-sm font-extrabold uppercase tracking-widest flex items-center justify-center gap-3 transition-all hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/30 active:scale-95">
+<span class="material-symbols-outlined">shopping_bag</span>
+                            Add to Bag
+                        </button>
+<button class="w-full py-5 rounded-full bg-surface-container-high text-on-surface text-sm font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+                            Add to Wishlist
+                        </button>
+</div>
+<!-- Expandable Details (Editorial Style) -->
+<div class="pt-10 space-y-0 divide-y divide-outline/10 border-t border-outline/10">
+<details class="group py-6">
+<summary class="list-none flex justify-between items-center cursor-pointer">
+<span class="text-xs font-bold uppercase tracking-widest">Sustainability &amp; Origin</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-6 text-sm leading-relaxed text-on-surface-variant space-y-3 font-light">
+<p>Ethically sourced Italian silk woven in our carbon-neutral atelier in Florence. Each piece is traced via digital blockchain certificate of authenticity.</p>
+<ul class="list-disc pl-4 space-y-1">
+<li>100% Organic Mulberry Silk</li>
+<li>Recycled Copper Hardware</li>
+<li>Biodegradable Packaging</li>
+</ul>
+</div>
+</details>
+<details class="group py-6">
+<summary class="list-none flex justify-between items-center cursor-pointer">
+<span class="text-xs font-bold uppercase tracking-widest">Details &amp; Care</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-6 text-sm leading-relaxed text-on-surface-variant font-light">
+<p>Professional dry clean only. Store on the provided cedar hanger to maintain the structural integrity of the shoulders. Avoid direct contact with oil-based perfumes.</p>
+</div>
+</details>
+<details class="group py-6">
+<summary class="list-none flex justify-between items-center cursor-pointer">
+<span class="text-xs font-bold uppercase tracking-widest">Complimentary Shipping</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-6 text-sm leading-relaxed text-on-surface-variant font-light">
+<p>Express worldwide shipping included. White-glove delivery available in selected metropolitan areas. Standard returns within 14 days.</p>
+</div>
+</details>
+</div>
+</div>
+</div>
+</div>
+<!-- Complete the Look (Asymmetric Bento) -->
+<section class="mt-40">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-4xl font-black tracking-tight mb-2">COMPLETE THE LOOK</h2>
+<p class="text-outline uppercase tracking-widest text-[10px] font-bold">Curated by our Lead Stylist</p>
+</div>
+<button class="text-primary font-bold uppercase tracking-widest text-xs border-b-2 border-primary/20 pb-1 hover:border-primary transition-all">Shop All Essentials</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+<!-- Item 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6">
+<img alt="Kinetic Trousers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Slim fit designer navy trousers paired with luxury leather boots against a neutral grey studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYVkunJMyHCPprjWaosfGgbvezxR23ZSpJ9zvJTwnwTif33YUXhMorAWMZUDh4B3UarM_KAfRt8BWbdJeErrdcMwM1R7wdP3v9fGIFJIlS4ue8J4s4ys0gwPhaqTrqbWtUHwF-YNiJqn46jUdUlZu1GoraUuTXabEpH9M7Zpq5yStAhIctCSlylqkUH3MGaW2E9cUHWwCUSJ0qM8mGY-Wd25QLOxgkdC1yslfLpy-NUo82GLuS5828XqlJ1scwyxq8YrOh6hJECGMC"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-on-surface">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest">Trousers</p>
+<h3 class="font-bold text-on-surface group-hover:text-primary transition-colors">Tapered Silk Slacks</h3>
+<p class="text-sm text-on-surface-variant">$890.00</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group cursor-pointer translate-y-8">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6">
+<img alt="Atelier Shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Crisp white Egyptian cotton shirt with concealed placket and minimalist collar design in high-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCytTnBF1lCg9nRLpIXOiZMkoGM1Qk9iNBzFILqqz0dlHu4m-XuuGyDuBf4u7ODhlrE1gMxq-WH2cPeCE3_QiDwviWL889TSKR3cg-3TkTQOH5VRQndUzHGAr0URlRh7rjK4o5dxgeOtT4mOi-KhAl_gE_BWb7rainQlekO2ax3RmWTz6BMajPL2InvnmfjavEq7HSU3bMkhUIbmygQDZ_5UN7lrSkkc9eQ_EPH-RUqY-BAHGmLpR_UXyDJfjNsoTwohvNEXAeiwKHU"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-on-surface">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest">Shirts</p>
+<h3 class="font-bold text-on-surface group-hover:text-primary transition-colors">Poplin Atelier Shirt</h3>
+<p class="text-sm text-on-surface-variant">$450.00</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6">
+<img alt="Leather Loafers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Polished black leather loafers with architectural silhouette and subtle metallic branding on the heel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuleWZnMgFJ2D91OyXPz-sKkyIZXmO2hv5AskS3bBwihj9TGZpKqs6wuOmTkrqLWoVaEdqoGjBZVx7iIqsa6AOudzqEpeq9mTpsaWO5nuzCbov93rET2d8E-XwuI3DTN5ORCDIKh2q7S16i2MqN9NnT0aCyVaxtYzaGKNTtmc4jFt1De8JSRGN9B4dr_cuyBt7_uGkxzBX9RLI0SOeovB7gdP5JwiSkXaCjG1Gd4oAOWqT-lowOF5jD9v0Ehmrx2NSLQKMUIpkJ97q"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-on-surface">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest">Footwear</p>
+<h3 class="font-bold text-on-surface group-hover:text-primary transition-colors">Sculpted Calfskin Loafer</h3>
+<p class="text-sm text-on-surface-variant">$1,200.00</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group cursor-pointer translate-y-8">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6">
+<img alt="The Tote" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="High-end textured blue leather tote bag with structured handles and minimalist hardware on a clean podium" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKLvI64Cbw9wFdbAvbG_wCmHVJiLhvBYe8YGGT7SAvUt4B864nF30IHtX-8VonPMqIHNqEsRa99J7V_gkY7AQPpffC1g_lTBVdtGCseD5LZUAyEmQyqBZ5jG1K68s3tHu8RzTDZoFr1WCl-zJLCWwitmd46cjn_K3ojY3QcuJyPLBv1R9vRfOBKloq_jo2ZBhB4ulEGFnzlTXYo4xpEp5yN_pFDaW2DMwAnZOs9w1TQtL8Aw_v8f2LuAggvS1F3y_eqdEMewnEBzT2"/>
+<button class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all translate-y-4 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-on-surface">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold text-outline uppercase tracking-widest">Accessories</p>
+<h3 class="font-bold text-on-surface group-hover:text-primary transition-colors">Kinetic Leather Carryall</h3>
+<p class="text-sm text-on-surface-variant">$1,850.00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2rem] mt-20 tonal-shift bg-[#f2efff]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-[1920px] mx-auto font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest">
+<div class="space-y-6">
+<div class="text-xl font-bold text-slate-900">AZURE KINETIC</div>
+<p class="text-slate-500 normal-case tracking-normal max-w-[200px]">Redefining luxury through the lens of movement and kinetic design.</p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Our Story</a>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Sustainability Report</a>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">The Atelier Journal</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Contact Us</a>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Shipping &amp; Returns</a>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Size Guide</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Terms of Service</a>
+<div class="pt-4 flex gap-6">
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer">share</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer">public</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer">alternate_email</span>
+</div>
+</div>
+</div>
+<div class="px-12 pb-12 w-full max-w-[1920px] mx-auto">
+<div class="pt-8 border-t border-slate-200 text-[10px] text-slate-400 text-center">
+                © 2024 AZURE KINETIC ATELIER. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
