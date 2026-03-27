@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Details | ATELIER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#2b2a51",
+              "tertiary-dim": "#832c76",
+              "on-secondary-fixed-variant": "#545b6f",
+              "error-container": "#f74b6d",
+              "tertiary-fixed-dim": "#e883d2",
+              "surface-container": "#e9e5ff",
+              "on-primary-fixed-variant": "#00207e",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#718bff",
+              "error-dim": "#a70138",
+              "on-secondary-container": "#4a5165",
+              "error": "#b41340",
+              "inverse-primary": "#6d88ff",
+              "tertiary-fixed": "#f790e0",
+              "surface": "#f9f5ff",
+              "on-error": "#ffefef",
+              "on-tertiary-fixed": "#380033",
+              "on-surface": "#2b2a51",
+              "primary-dim": "#003cd3",
+              "surface-variant": "#dcd9ff",
+              "on-secondary": "#f0f2ff",
+              "secondary-fixed-dim": "#cdd4eb",
+              "on-surface-variant": "#585781",
+              "surface-tint": "#0846ed",
+              "primary": "#0846ed",
+              "tertiary-container": "#f790e0",
+              "outline-variant": "#aba9d7",
+              "tertiary": "#913983",
+              "primary-container": "#859aff",
+              "secondary-dim": "#484f63",
+              "on-error-container": "#510017",
+              "primary-fixed": "#859aff",
+              "secondary": "#545b6f",
+              "on-primary-container": "#001867",
+              "outline": "#74739e",
+              "surface-dim": "#d2d0ff",
+              "secondary-fixed": "#dbe2fa",
+              "on-primary": "#f2f1ff",
+              "surface-container-highest": "#dcd9ff",
+              "surface-bright": "#f9f5ff",
+              "on-tertiary-fixed-variant": "#6a1460",
+              "on-primary-fixed": "#000000",
+              "background": "#f9f5ff",
+              "on-secondary-fixed": "#383f52",
+              "surface-container-high": "#e2dfff",
+              "on-tertiary-container": "#5f0656",
+              "inverse-on-surface": "#9a99c6",
+              "secondary-container": "#dbe2fa",
+              "inverse-surface": "#0a082f",
+              "surface-container-low": "#f2efff",
+              "on-tertiary": "#ffeef6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<button class="text-blue-600 transition-transform scale-95 active:scale-90">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-xl font-black tracking-tighter text-slate-900 font-headline">ATELIER</span>
+<div class="flex gap-4">
+<button class="text-blue-600 transition-transform scale-95 active:scale-90">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+</header>
+<main class="pt-16 pb-32">
+<!-- Hero Gallery Section -->
+<section class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden">
+<div class="flex h-full overflow-x-auto snap-x snap-mandatory hide-scrollbar">
+<div class="flex-none w-full h-full snap-center">
+<img alt="Product Image 1" class="w-full h-full object-cover" data-alt="Studio shot of a minimalist high-end designer jacket in electric blue, soft editorial lighting with clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh0GGZvJ1tlnjORv2xRnch8hbhdWN-bTds4XeNA6AGJL1Pz60Wk7WmV0-4Jk7OQVVZlYt2dWh0H8numP8YOU9t5txEeKqkFCikLANL48qkbP34EJqIPO_E-BltbBc2hM3VLa9qrO70wWoUGkZ0mYddW_Jk7e5sTbTPDILOFZHm972db1JGF2z_fjwD6xfdGnU760ksbb7R2FUyGhONc2huZstPDqBqIM4I6rE2w4RpqPMU4_plBOGqeVaCm7yXUIaSAxmG1hycjH7f"/>
+</div>
+<div class="flex-none w-full h-full snap-center">
+<img alt="Product Image 2" class="w-full h-full object-cover" data-alt="Close-up detail of premium fabric texture and silver hardware on a designer garment, sharp focus with shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHCYd-HFbXcOV7Dd5Q_r5GTjX1C-dEtRhe-k40xt1dpWVIE_Sk9eTVk71C3yCrIGMBJrVsInZv1Ougb10yV5qcDMyNQdRB7X8z0NUDe7Yiu5HyM2QJhMlK5LeSidTl_Y-4Oei5SELco8ANzdj3lhuTodyUEEkwx7WmT03Tnjys5PpOkasa_RL5jyYoctqRwOslzEJPJNfUbgrASX6t27RLuyInVUaxgLYrvIr8SvuptSCH5qOnQj04zthgO1iMR7AtDvhpTFwy0IkJ"/>
+</div>
+<div class="flex-none w-full h-full snap-center">
+<img alt="Product Image 3" class="w-full h-full object-cover" data-alt="Fashion model wearing a tailored electric blue jacket in an industrial loft setting with natural side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDexwcgZEN926kbHrD9dF4n__Fe-Hhr1CwFDDsGvQrWFdisym74bFLNUWF4Vgk-DIuypLrg0o_ApMHGaCwnQys1-ia5zBAzfISVsEMrMmdOfuN8dLiePbSy4Po0NvHODgySEu_Pu86D3wAGKCsyVVVG-HfUxyRUMRUjpJqcHfvAAunKA9PiEhnDKacsBuqP0Lmn5SYe6sybOJfXg1oIDAb8v4BOlSNyYBZDxbD5bxNd9f2edo4RfIUzKQR2LmTCqfQWCGK_Bi-t_J66"/>
+</div>
+</div>
+<!-- Floating Indicators -->
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full bg-on-surface/20"></div>
+<div class="w-2 h-2 rounded-full bg-on-surface/20"></div>
+</div>
+<!-- Heart Action -->
+<button class="absolute top-6 right-6 w-12 h-12 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center text-on-surface shadow-lg">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</section>
+<!-- Product Details Content -->
+<section class="px-6 pt-10 pb-16 bg-surface-container-lowest rounded-t-[2.5rem] -mt-10 relative z-10">
+<div class="flex justify-between items-start mb-4">
+<div class="space-y-1">
+<span class="text-xs font-bold tracking-[0.2em] text-tertiary uppercase font-label">New Arrival</span>
+<h1 class="text-3xl font-extrabold tracking-tight font-headline text-on-surface">Architectural Technical Blazer</h1>
+</div>
+<div class="text-right">
+<span class="text-2xl font-bold font-headline text-primary">$845.00</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mb-8">
+<div class="flex text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+<span class="text-xs font-medium text-outline">4.8 (124 reviews)</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed mb-10 text-sm">
+                A masterpiece of modern tailoring. This technical blazer features laser-cut seams, water-repellent Japanese nylon, and an asymmetric interior harness. Designed for the fluid transition between city architecture and digital workspaces.
+            </p>
+<!-- Variants: Color -->
+<div class="mb-8">
+<h3 class="text-sm font-bold uppercase tracking-widest text-on-surface mb-4 font-label">Color</h3>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full bg-primary ring-4 ring-primary-container ring-offset-2 ring-offset-white"></button>
+<button class="w-10 h-10 rounded-full bg-on-surface ring-1 ring-outline-variant"></button>
+<button class="w-10 h-10 rounded-full bg-slate-300 ring-1 ring-outline-variant"></button>
+</div>
+</div>
+<!-- Variants: Size -->
+<div class="mb-12">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-sm font-bold uppercase tracking-widest text-on-surface font-label">Size</h3>
+<button class="text-xs font-semibold text-primary underline underline-offset-4">Size Guide</button>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-3 rounded-xl border border-outline-variant text-sm font-bold font-label hover:border-primary transition-colors">XS</button>
+<button class="px-6 py-3 rounded-xl border-2 border-primary text-primary text-sm font-bold font-label">S</button>
+<button class="px-6 py-3 rounded-xl border border-outline-variant text-sm font-bold font-label hover:border-primary transition-colors">M</button>
+<button class="px-6 py-3 rounded-xl border border-outline-variant text-sm font-bold font-label hover:border-primary transition-colors">L</button>
+<button class="px-6 py-3 rounded-xl border border-outline-variant text-sm font-bold font-label hover:border-primary transition-colors">XL</button>
+</div>
+</div>
+<!-- Features Bento Grid-like layout -->
+<div class="grid grid-cols-2 gap-4 mb-12">
+<div class="p-6 bg-surface-container-low rounded-3xl space-y-3">
+<span class="material-symbols-outlined text-primary" data-icon="eco">eco</span>
+<h4 class="font-bold text-sm">Sustainability</h4>
+<p class="text-xs text-on-surface-variant">100% recycled nylon shell</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-3xl space-y-3">
+<span class="material-symbols-outlined text-primary" data-icon="local_shipping">local_shipping</span>
+<h4 class="font-bold text-sm">Fast Delivery</h4>
+<p class="text-xs text-on-surface-variant">2-day express shipping available</p>
+</div>
+</div>
+</section>
+<!-- Recommended Section -->
+<section class="bg-surface-container-low px-6 py-16">
+<h2 class="text-2xl font-extrabold font-headline mb-8">You May Also Like</h2>
+<div class="flex gap-6 overflow-x-auto hide-scrollbar -mx-6 px-6">
+<!-- Recommended Card 1 -->
+<div class="flex-none w-64">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-surface-container-lowest">
+<img alt="Related Product" class="w-full h-full object-cover" data-alt="Minimalist white organic cotton t-shirt flat lay on a textured gray background, high fashion photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ElJSa3QuMrffoeto0FMoBAQsLN7XnLFjUkZXpwokz4qhAqUlSVXudlefJ28Ovx6AFTNmEPl2UsL3qNQwCMax8h4OXFC_rUabhm6gc1sMSARXfq55G7pf0kZ0RF8pEBZh0Re6RJYgg1qH7Y3alCcuSdVbzNS0ggcC5tI-XVogLpDcFsCtNmFzLjX98wrE9OAZtbjcg6kuVfXOadzX_J-b0Sg4L8F4lYGUFhIQUA9JVwMd2aa8rjLMloJs8bNUr6H6hwzMPeCy3i96"/>
+</div>
+<h3 class="font-bold text-sm mb-1">Raw Edge Cotton Tee</h3>
+<p class="text-primary font-bold">$125.00</p>
+</div>
+<!-- Recommended Card 2 -->
+<div class="flex-none w-64">
+<div class="aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-surface-container-lowest">
+<img alt="Related Product" class="w-full h-full object-cover" data-alt="Modern leather Chelsea boots with chunky architectural sole, studio lighting on soft purple background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_oaQRmsh50QlorjvyCSpLuB1AQ43xv30F22ZCROOePEdFpeqCICqjXB1CWAd5gd7CaWW4xonz4h3ctWI2jbuHsFJ8GLR9ZDrCk2jpOPs9Itmg1iFK881UUqigAarD8RM4ESG3Cg0wkL5b5rKNzCKNLyV3vydfkKp2DKyxF0XkQOy39DWhIxltHiC-4A9rXJ_5B_-DewJLLxYBDAHlYzJAPQ5twWP-eWKRdrqwaCa2d3K2Zks6RI8BJwtTbqPxpl7185q3Wjnb42Am"/>
+</div>
+<h3 class="font-bold text-sm mb-1">Sculpted Leather Boots</h3>
+<p class="text-primary font-bold">$450.00</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky Bottom Actions -->
+<div class="fixed bottom-0 left-0 w-full bg-white/80 backdrop-blur-2xl z-50 px-6 py-6 shadow-[0_-10px_40px_rgba(43,42,81,0.06)] flex gap-4 items-center">
+<button class="w-16 h-16 rounded-2xl border border-outline-variant flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<div class="flex-1 flex gap-3">
+<button class="flex-1 bg-primary text-on-primary font-bold py-4 px-6 rounded-2xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2 hover:opacity-90 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-xl" data-icon="shopping_bag">shopping_bag</span>
+                Add to Cart
+            </button>
+</div>
+</div>
+<!-- Bottom Nav Placeholder (Suppressed for focused product journey as per rule but available for context) -->
+<!-- The prompt focuses on the Product Details Screen, which implies a focused journey where global nav is usually hidden for Buy Now conversion -->
+</body></html>

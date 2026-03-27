@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Bag | ATELIER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#2b2a51",
+              "tertiary-dim": "#832c76",
+              "on-secondary-fixed-variant": "#545b6f",
+              "error-container": "#f74b6d",
+              "tertiary-fixed-dim": "#e883d2",
+              "surface-container": "#e9e5ff",
+              "on-primary-fixed-variant": "#00207e",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#718bff",
+              "error-dim": "#a70138",
+              "on-secondary-container": "#4a5165",
+              "error": "#b41340",
+              "inverse-primary": "#6d88ff",
+              "tertiary-fixed": "#f790e0",
+              "surface": "#f9f5ff",
+              "on-error": "#ffefef",
+              "on-tertiary-fixed": "#380033",
+              "on-surface": "#2b2a51",
+              "primary-dim": "#003cd3",
+              "surface-variant": "#dcd9ff",
+              "on-secondary": "#f0f2ff",
+              "secondary-fixed-dim": "#cdd4eb",
+              "on-surface-variant": "#585781",
+              "surface-tint": "#0846ed",
+              "primary": "#0846ed",
+              "tertiary-container": "#f790e0",
+              "outline-variant": "#aba9d7",
+              "tertiary": "#913983",
+              "primary-container": "#859aff",
+              "secondary-dim": "#484f63",
+              "on-error-container": "#510017",
+              "primary-fixed": "#859aff",
+              "secondary": "#545b6f",
+              "on-primary-container": "#001867",
+              "outline": "#74739e",
+              "surface-dim": "#d2d0ff",
+              "secondary-fixed": "#dbe2fa",
+              "on-primary": "#f2f1ff",
+              "surface-container-highest": "#dcd9ff",
+              "surface-bright": "#f9f5ff",
+              "on-tertiary-fixed-variant": "#6a1460",
+              "on-primary-fixed": "#000000",
+              "background": "#f9f5ff",
+              "on-secondary-fixed": "#383f52",
+              "surface-container-high": "#e2dfff",
+              "on-tertiary-container": "#5f0656",
+              "inverse-on-surface": "#9a99c6",
+              "secondary-container": "#dbe2fa",
+              "inverse-surface": "#0a082f",
+              "surface-container-low": "#f2efff",
+              "on-tertiary": "#ffeef6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .tonal-shift-bg { background-color: rgba(249, 245, 255, 0.7); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="text-blue-600 dark:text-blue-400 hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<span class="text-xl font-black tracking-tighter text-slate-900 dark:text-white font-['Plus_Jakarta_Sans']">ATELIER</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-blue-600 dark:text-blue-400 hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform relative">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary text-on-primary text-[10px] font-bold h-4 w-4 rounded-full flex items-center justify-center">3</span>
+</button>
+</div>
+</header>
+<main class="pt-20 pb-40 px-6 max-w-2xl mx-auto">
+<!-- Editorial Header -->
+<div class="mb-10">
+<h1 class="font-headline text-4xl font-extrabold tracking-tight text-on-background">Your Bag</h1>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest mt-2">3 Items Selected</p>
+</div>
+<!-- Cart Items List -->
+<div class="space-y-6">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex gap-5 group transition-all duration-300">
+<div class="w-24 h-32 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img alt="Premium Wool Coat" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up of a high-quality camel wool coat with elegant texture against a neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC_gPII_8p1pncTle7rckEqvXUohJ2zpkJLMXuQvCP2y-nbu5_3oOqGveYzwRdKywAdq6pJsLjkW8yyjwDhuD9m1UL0uPyVXAXu53lVUe-2LvE484ig92ZR5wx2OuLvCNOsJWI3crl9S7HmNhEUK4_guuwm8PtV40mbebzczC2mEntdgfL-im1ixq0VwUm50-vgCZ6U36jclrcUHx--Uqg5n7wKU-OmAJxhn85n2qdIeJrz8PuZ95RrZWXeOSoG-FE2udgVuzlY-fG"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline font-bold text-lg text-on-surface">Sculpted Wool Coat</h3>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="close">close</span>
+</button>
+</div>
+<p class="text-on-surface-variant text-sm mt-1">Camel / Medium</p>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center bg-surface-container-low rounded-full px-3 py-1 gap-4">
+<button class="text-primary hover:opacity-70 transition-opacity flex items-center">
+<span class="material-symbols-outlined text-lg" data-icon="remove">remove</span>
+</button>
+<span class="font-bold text-sm">1</span>
+<button class="text-primary hover:opacity-70 transition-opacity flex items-center">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+<span class="font-headline font-bold text-primary text-lg">$340.00</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex gap-5 group transition-all duration-300">
+<div class="w-24 h-32 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img alt="Athletic Footwear" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern high-performance red sneakers showcased in a minimalist architectural setting with sharp lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEpkah-bybE6LYE9uSHuiekIjpx0fa1aHWvqChU5gqceJYAI7OfKZC-nLa8b0dHE6DP2ibZxmYiGP_MswPk4T6B3HfRBLYVkl8kJ7GzUDBZRR4jzs5fGqZvJAoFyR9kmqWoBufQM-G38sShmoQQk0Ide0RjbdRq6EdU-Zb04DD0886zE--ecGv-UJhAPLHnb_uDAesYPs9CvQcssVRatvkfsKFJKCS0cs5c8kEL25kswWcQb2GA9Mr0rIRh4GzLZsGycCZ4R6fn7D1"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline font-bold text-lg text-on-surface">Veloce Runner</h3>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="close">close</span>
+</button>
+</div>
+<p class="text-on-surface-variant text-sm mt-1">Crimson / 10</p>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center bg-surface-container-low rounded-full px-3 py-1 gap-4">
+<button class="text-primary hover:opacity-70 transition-opacity flex items-center">
+<span class="material-symbols-outlined text-lg" data-icon="remove">remove</span>
+</button>
+<span class="font-bold text-sm">1</span>
+<button class="text-primary hover:opacity-70 transition-opacity flex items-center">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+<span class="font-headline font-bold text-primary text-lg">$185.00</span>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex gap-5 group transition-all duration-300">
+<div class="w-24 h-32 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img alt="Minimalist Watch" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Luxury minimalist wristwatch with white face and silver band on a soft silk fabric background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJFInzHzMDujbbNKNk5sq-u1Zw3FkC-GlkmEh48QgVfdpWTKElL2fYE4_fquApJaBsPDP_fsaGq5VONG6vqoKFR1KYJ-QFEndZoLHS_HQ1s8v6ko3jkvY5l-I21t3ATkXvJpclCYqsggYpXQUh8U1aYWu5fqnh7J4UnkM4XpyOuY-Jye_rq9LyY5CrzSVYLYUXzA5jobBT5PdtJRCimnwFeX31BTCBgNoKXAQbyT-DAluX2ozz3xBi3Zw335B93RkQ93ksjz8Sl8Bp"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-headline font-bold text-lg text-on-surface">Lumina Timepiece</h3>
+<button class="text-outline hover:text-error transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="close">close</span>
+</button>
+</div>
+<p class="text-on-surface-variant text-sm mt-1">Silver / One Size</p>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center bg-surface-container-low rounded-full px-3 py-1 gap-4">
+<button class="text-primary hover:opacity-70 transition-opacity flex items-center">
+<span class="material-symbols-outlined text-lg" data-icon="remove">remove</span>
+</button>
+<span class="font-bold text-sm">1</span>
+<button class="text-primary hover:opacity-70 transition-opacity flex items-center">
+<span class="material-symbols-outlined text-lg" data-icon="add">add</span>
+</button>
+</div>
+<span class="font-headline font-bold text-primary text-lg">$210.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Promo Code -->
+<div class="mt-12">
+<label class="block text-on-surface-variant font-label text-xs uppercase tracking-widest mb-3">Promo Code</label>
+<div class="flex gap-3">
+<input class="flex-grow bg-surface-container-high border-none rounded-xl px-5 py-4 text-on-surface focus:ring-2 focus:ring-primary/20 placeholder:text-outline transition-all" placeholder="Enter code" type="text"/>
+<button class="bg-surface-container-highest text-on-surface font-bold px-6 py-4 rounded-xl hover:opacity-80 transition-opacity">Apply</button>
+</div>
+</div>
+</main>
+<!-- Checkout Summary Bar -->
+<section class="fixed bottom-0 left-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[2rem] shadow-[0_-10px_40px_rgba(43,42,81,0.06)] px-8 pb-10 pt-8 border-none">
+<div class="max-w-2xl mx-auto">
+<div class="space-y-2 mb-6">
+<div class="flex justify-between text-on-surface-variant font-body">
+<span>Subtotal</span>
+<span class="font-semibold text-on-surface">$735.00</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body">
+<span>Estimated Tax</span>
+<span class="font-semibold text-on-surface">$58.80</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body">
+<span>Shipping</span>
+<span class="text-tertiary font-bold">FREE</span>
+</div>
+<div class="pt-4 mt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-headline text-xl font-bold">Total</span>
+<span class="font-headline text-2xl font-black text-primary">$793.80</span>
+</div>
+</div>
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-headline font-bold py-5 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all">
+<span>Proceed to Checkout</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Navigation Drawer (Hidden initially, shown for interaction in real app) -->
+<div class="hidden fixed inset-0 z-[100] bg-on-surface/40 backdrop-blur-sm">
+<div class="w-80 max-w-[85vw] h-full bg-slate-50 dark:bg-slate-950 flex flex-col p-6 rounded-r-3xl shadow-2xl slide-in transition-transform duration-500">
+<div class="flex justify-between items-center mb-10">
+<h2 class="font-['Plus_Jakarta_Sans'] text-lg font-semibold text-blue-600">Filters</h2>
+<button class="material-symbols-outlined text-on-surface" data-icon="close">close</button>
+</div>
+<nav class="flex flex-col gap-2">
+<button class="bg-blue-600 text-white rounded-xl mx-2 p-4 flex items-center gap-4 transition-all">
+<span class="material-symbols-outlined" data-icon="straighten">straighten</span>
+<span class="font-['Plus_Jakarta_Sans'] text-lg font-semibold">Size</span>
+</button>
+<button class="text-slate-600 dark:text-slate-400 mx-2 p-4 flex items-center gap-4 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all">
+<span class="material-symbols-outlined" data-icon="palette">palette</span>
+<span class="font-['Plus_Jakarta_Sans'] text-lg font-semibold">Color</span>
+</button>
+<button class="text-slate-600 dark:text-slate-400 mx-2 p-4 flex items-center gap-4 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-['Plus_Jakarta_Sans'] text-lg font-semibold">Price Range</span>
+</button>
+<button class="text-slate-600 dark:text-slate-400 mx-2 p-4 flex items-center gap-4 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+<span class="font-['Plus_Jakarta_Sans'] text-lg font-semibold">Material</span>
+</button>
+<button class="text-slate-600 dark:text-slate-400 mx-2 p-4 flex items-center gap-4 hover:bg-slate-200 dark:hover:bg-slate-800 transition-all">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<span class="font-['Plus_Jakarta_Sans'] text-lg font-semibold">Sustainability</span>
+</button>
+</nav>
+</div>
+</div>
+<!-- Hidden Bottom Nav Bar for Mobile context -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl rounded-t-[2rem] shadow-[0_-10px_40px_rgba(43,42,81,0.06)] sr-only">
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 w-12 h-12 hover:text-blue-500 transition-all">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 w-12 h-12 hover:text-blue-500 transition-all">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+</button>
+<button class="flex flex-col items-center justify-center bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full w-12 h-12 scale-110">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 w-12 h-12 hover:text-blue-500 transition-all">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</nav>
+</body></html>

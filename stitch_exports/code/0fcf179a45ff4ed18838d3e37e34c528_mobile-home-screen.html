@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ATELIER | Modern E-Commerce</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#2b2a51",
+              "tertiary-dim": "#832c76",
+              "on-secondary-fixed-variant": "#545b6f",
+              "error-container": "#f74b6d",
+              "tertiary-fixed-dim": "#e883d2",
+              "surface-container": "#e9e5ff",
+              "on-primary-fixed-variant": "#00207e",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#718bff",
+              "error-dim": "#a70138",
+              "on-secondary-container": "#4a5165",
+              "error": "#b41340",
+              "inverse-primary": "#6d88ff",
+              "tertiary-fixed": "#f790e0",
+              "surface": "#f9f5ff",
+              "on-error": "#ffefef",
+              "on-tertiary-fixed": "#380033",
+              "on-surface": "#2b2a51",
+              "primary-dim": "#003cd3",
+              "surface-variant": "#dcd9ff",
+              "on-secondary": "#f0f2ff",
+              "secondary-fixed-dim": "#cdd4eb",
+              "on-surface-variant": "#585781",
+              "surface-tint": "#0846ed",
+              "primary": "#0846ed",
+              "tertiary-container": "#f790e0",
+              "outline-variant": "#aba9d7",
+              "tertiary": "#913983",
+              "primary-container": "#859aff",
+              "secondary-dim": "#484f63",
+              "on-error-container": "#510017",
+              "primary-fixed": "#859aff",
+              "secondary": "#545b6f",
+              "on-primary-container": "#001867",
+              "outline": "#74739e",
+              "surface-dim": "#d2d0ff",
+              "secondary-fixed": "#dbe2fa",
+              "on-primary": "#f2f1ff",
+              "surface-container-highest": "#dcd9ff",
+              "surface-bright": "#f9f5ff",
+              "on-tertiary-fixed-variant": "#6a1460",
+              "on-primary-fixed": "#000000",
+              "background": "#f9f5ff",
+              "on-secondary-fixed": "#383f52",
+              "surface-container-high": "#e2dfff",
+              "on-tertiary-container": "#5f0656",
+              "inverse-on-surface": "#9a99c6",
+              "secondary-container": "#dbe2fa",
+              "inverse-surface": "#0a082f",
+              "surface-container-low": "#f2efff",
+              "on-tertiary": "#ffeef6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .tonal-shift-bg { background-color: #f9f5ff; }
+        .surface-container-low-bg { background-color: #f2efff; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<button class="text-blue-600 hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<span class="text-xl font-black tracking-tighter text-slate-900 font-headline">ATELIER</span>
+<button class="text-blue-600 hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</header>
+<main class="pt-16 pb-32">
+<!-- Hero Section -->
+<section class="px-6 pt-8 pb-12">
+<div class="relative w-full aspect-[4/5] rounded-[2rem] overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Fashion editorial shot of a woman in high-end minimalist electric blue couture posing against a neutral architectural concrete background with dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-e1J68iavnYnsgYcf5tByx0lGxK_bbR2HzPqJt0SzdZIonUbgvWqtQnwY3r7XjENbkqTaLVMfxq8Ot3PttolAovfE9gXlmMW_v3Y1jeBBg7ZrjjW60jvsKKWRh9VsgiJfaopLVgXBMRBzH8mQ5lQhltoCgOcbu1GNm4gDZAgCkHfdU5fE_50ZFACSrNzy640OClzgYNUNO2O_RQRsiE6qyZPfJdQ6b3A-MbbJLdix7FFG3eCdsHYovXIfNlBVsBY30FRfFlUnEJE4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="text-on-primary font-headline text-sm font-bold tracking-[0.2em] mb-2">NEW SEASON</span>
+<h1 class="text-on-primary font-headline text-4xl font-extrabold leading-tight mb-6">Electric<br/>Fluidity</h1>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold py-4 px-8 rounded-xl w-fit shadow-xl scale-100 hover:scale-105 transition-transform duration-300">
+                        Explore Collection
+                    </button>
+</div>
+</div>
+</section>
+<!-- Categories -->
+<section class="py-4">
+<div class="flex items-baseline justify-between px-6 mb-6">
+<h2 class="font-headline text-2xl font-bold tracking-tight">Curations</h2>
+<span class="text-primary font-label text-xs font-bold tracking-widest uppercase">View All</span>
+</div>
+<div class="flex overflow-x-auto gap-6 px-6 hide-scrollbar">
+<div class="flex flex-col items-center gap-3 shrink-0">
+<div class="w-20 h-20 rounded-full p-1 border-2 border-primary/20">
+<img class="w-full h-full object-cover rounded-full" data-alt="Close-up of premium leather handbag with metallic hardware in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpItRXTTWyXW_TDQtcg9eaodIuPE3ROQuR5pV-0749fRyhBv6rGFhU6gSAv_SalcWVv_WH9LLGOu1jL30pYlEaYmboT0kfcw5R2aaI_AauXVSDB09wkkbRlDDIt9i8cIG_Z_X-BewdKbR1pTHk7Lz1He-9jVYJFHqFhTcrFWSBQnz5z-iHQMMLbAomWlNip10D1Mx8PgDJ-gzwWobMq-Cxzobj1KV28U6PB2Z2VAjI6yLYOxyrQe0Y_dTYtpB-pHIKsP_bcfqAbA23"/>
+</div>
+<span class="font-label text-xs font-semibold">Bags</span>
+</div>
+<div class="flex flex-col items-center gap-3 shrink-0">
+<div class="w-20 h-20 rounded-full p-1 border-2 border-transparent">
+<img class="w-full h-full object-cover rounded-full" data-alt="Luxury high-heel footwear displayed on a pedestal with elegant soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBowPTGj7L5gpLzD57aIilOAkVdjFCYtmXft-nIiknpVhDWeQY9V5HLYFd80qEntUq5B-QkBzcycKT4j4PgEJLIxNxxm9xKJMQkIShWa6CUokWAQEe5qteuZ8XUIJcVFtBcWbX8OEA-uSthAE-guv2t37aAHBtkkSQI2GYExkGLzbs9yALQFeJiaAdRBEnnCUxZ0t2ON8lK1JLgkBUfinHP7RTPVOozD8SnRCqCRdKl7H72ifUaw0w5aPj5Bg2L2zzpvoSLFLMUtwJv"/>
+</div>
+<span class="font-label text-xs font-semibold">Heels</span>
+</div>
+<div class="flex flex-col items-center gap-3 shrink-0">
+<div class="w-20 h-20 rounded-full p-1 border-2 border-transparent">
+<img class="w-full h-full object-cover rounded-full" data-alt="Modern minimalist aesthetic clothing hanging on a wooden rack against a white wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTjdqAVZpuW7ah4qTpelHM9WSdlli8kdqWFjSY-6IjzF1EqSnjJs7C74FsZ83PQmTebOQNbQeDfEvDF5-7Oon9yAVNYrFoO84QzSljtVBHlACV_uqwn0Ev1Cy9Cqa3uXzvJzEJokL0aF9mbMhliMd-oerWZ_Wdf9poBVpiAscbN7Ooc92pd9PxHtkbD08wXINgQDs-3gWmmKe43O7LrcGOBWShxMjVSi8z40gODdGe1Jw_Ud8aiNoYrwx_vNS6rh2DdF3rMCISrYDL"/>
+</div>
+<span class="font-label text-xs font-semibold">Apparel</span>
+</div>
+<div class="flex flex-col items-center gap-3 shrink-0">
+<div class="w-20 h-20 rounded-full p-1 border-2 border-transparent">
+<img class="w-full h-full object-cover rounded-full" data-alt="High-end electronic lifestyle product with sleek metallic finish and minimalist design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAnXw5PT7mALN9GDnTR_FeAtpNUm0WQFDRpAzB8IHn1fiXv4VEop09WfkZ92iUtzH-Rf6qPlTE60XL7C4-v_tWY1MAHz6IgoljRb2kSSMszkxFtxLS0EYg-NPYwkk9h1gGDijPKCymy1XD-xrPjS8V4JsiGxt2xm2tkTtDUQlOv1YpDHkrYomHMRquZARiidwh3xlYaGIcfYneH5z2pVWO26EZneh7fj3mwiNLvvlsf7JwrT5Cj5lSd1uj5PYmPzIz24bABsTT860q"/>
+</div>
+<span class="font-label text-xs font-semibold">Tech</span>
+</div>
+<div class="flex flex-col items-center gap-3 shrink-0">
+<div class="w-20 h-20 rounded-full p-1 border-2 border-transparent">
+<img class="w-full h-full object-cover rounded-full" data-alt="Artisanal perfume bottle with gold details on a marble surface with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNKjMRhdz6g1a-SFOpeN4Bho6jRr_4AoFA7F8CZL28rtGc8GvhGsnUfeQeCOgls55uOC_X4dBWCsVUOlUnpDwVxcrcu5hQiRTtxSNeh01s4hfpBHAzdVmLdZTvsaRrXOb-d4cwbQWVUiNlyK0TQc0XNKO_bXgCSaIKqTS17J_OI-G75AGIAEHEFTrfAFDFjDcMCi3a8EpOgVd9Fe5UucWzJ6rbsHndAx8pvgUwvvXtDqiODWdIb6GiK5A7AgHxneVoe3c5oWZlEzQO"/>
+</div>
+<span class="font-label text-xs font-semibold">Scent</span>
+</div>
+</div>
+</section>
+<!-- Flash Sale / Countdown -->
+<section class="px-6 py-12">
+<div class="bg-surface-container-low rounded-[2rem] p-8 relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label text-xs font-bold uppercase tracking-widest text-error">Limited Release</span>
+</div>
+<h2 class="font-headline text-3xl font-extrabold mb-4">Midnight Drop</h2>
+<div class="flex gap-3 mb-8">
+<div class="flex flex-col items-center bg-surface-container-lowest w-14 py-3 rounded-2xl shadow-sm">
+<span class="font-headline text-xl font-bold">08</span>
+<span class="text-[10px] font-bold text-outline">HRS</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-lowest w-14 py-3 rounded-2xl shadow-sm">
+<span class="font-headline text-xl font-bold">42</span>
+<span class="text-[10px] font-bold text-outline">MIN</span>
+</div>
+<div class="flex flex-col items-center bg-primary w-14 py-3 rounded-2xl shadow-sm">
+<span class="font-headline text-xl font-bold text-on-primary">15</span>
+<span class="text-[10px] font-bold text-on-primary/70">SEC</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-lg transform -rotate-2">
+<img class="w-full h-full object-cover" data-alt="Luxury leather sneaker in white and electric blue accents on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK0lvNFlk6WijDr1wd0LZ2kErFxkNWwDprZV2VmDGO-ee9_2n5brnmkzcdPpJ8kWQF4VaUDN5IoDLbWj0K9iwxNEXPg-F1yfg4vKNDAWbZexuUujIeUIEKc2vsK-f-XGgeK1MARvC6MQjEsAj0sRqkNelXMsPX8ZxNu_t3h4jyDqTb8JPJT_xIcS1VUm1SUfZ8Q4GfeV5ujWZpW6dSqc-ipwjMendp306nuqXUhx7a82yEwziZkEIusRulXIGdoWwj_tEBEQIoE_yC"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden shadow-lg transform rotate-2 mt-4">
+<img class="w-full h-full object-cover" data-alt="Close-up of high-performance black athletic shoes with textured fabric and sleek design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRveLS420odzi-SodTwCYgXY4Sa3o07SBwtzaT0uHKi0C7a9-8dv0y3mPVvFuMTtrDfzlrm1Yp7Yi2MrU4yYrtvcxM1UYiv9CU0aeKl2aLs4m-o3XA2RkRvHHPRFAwhEhRinw5-BRlOwTGAL_qb-VlImWhdxdU_I7K_GFP_ioBL9PIoeZniJA9MqgrtK2Q1f5JxKwegmiNA-G7lvvFpZ8cG2mujPqZ5W3aZKFRU09rnRm8EHoHDhpQs97nKuVuFs95K2GKJHzK-8NA"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-8">
+<div class="px-6 mb-8 flex items-end justify-between">
+<div>
+<span class="text-tertiary font-label text-xs font-bold uppercase tracking-widest">Recommended</span>
+<h2 class="font-headline text-2xl font-bold tracking-tight mt-1">Atelier Selects</h2>
+</div>
+<div class="flex gap-2">
+<button class="w-8 h-8 rounded-full border border-outline-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-on-background text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto gap-8 px-6 hide-scrollbar">
+<!-- Product Card 1 -->
+<div class="shrink-0 w-64 group">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Minimalist beige leather sneaker in sharp profile view against a soft gray background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJgPJg_-5TruY04G7snPehqOkbx20Qv5kRfii4KRZgl34BWeWRnZ-P4u5MfmhTDzzSz7TnmBTICvY8Az527dLOXcVqASXC-sAXco4wkVhXN2-8SD8zjqvGN4Ksu2HYFYuUQ-inrl1F6NSM15ndW8Uq4-DSmup3CHU3MQx_jcQHkk4LcTCSPOAo9Y66OPZIdHolIsmCH6cDgfglxzeK9wfxBig4pPVg6juToSWtfcjBj27CNnmTB54OxZsvSgkDLGbhARn7F-Mk9jtO"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline font-bold text-lg">Linear Suede Sneaker</h3>
+<p class="text-outline text-sm">Taupe / Cloud White</p>
+<p class="font-headline font-extrabold text-primary pt-2">$240.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="shrink-0 w-64 group">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Woman wearing a long flowing beige trench coat walking down a sunlit metropolitan street" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHVRTXk7nD2yZfAWeATpC--GARozsDSe22jvZi-wbl5_9xXAieClXj3bXM85GfrioZb9ifFW8vPY4ObI5HUlkK7WfQBY3FeVSNbVTwc6DYgoZfbR7ZmIVD9rfGntfW4o0L5F-lMJoy8rV8yihhgPq0csQ6V0yD0sMrAKdqMr3SMB2ShxqTYnwagfTgjaSzUiMgaairbzU58vVhsbnZo8UZGX_XmrPlKoVCOR5oKjUZG6H3N_wy6lFTpStiHwJrhq7H98u2LYgNbNus"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline font-bold text-lg">Overstructured Coat</h3>
+<p class="text-outline text-sm">Seasonal Sand</p>
+<p class="font-headline font-extrabold text-primary pt-2">$580.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="shrink-0 w-64 group">
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden mb-4 bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Sleek modern black wristwatch with minimalist dial and leather strap against a dark aesthetic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbJLiklI1n9I5s5CoceHisMj6njSDP2zTljsGO6ApPxcL_XDcclAHtY-xbz-DTOPsf54U7Et3cG5DLmxJyp5wF8fjyt83Fb9GP1pPP1kgHdLX_5jMO7o_fQ4x8lT6IivQXsfqRvwfOqBkoZvuJ35Cy8ohZfB-zOvlUZ2vNsBC5PlFLRsAhFEYZQNbKEeiED5K652X_TK_-qX7WWuAZmpulvlII-rWApPLC-6AbuVql0Utmdx3KBxb3McFZh9mcmyW6oyd9g0VkQQ_Q"/>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center text-on-surface shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline font-bold text-lg">Monolith Timepiece</h3>
+<p class="text-outline text-sm">Matte Onyx</p>
+<p class="font-headline font-extrabold text-primary pt-2">$1,120.00</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-white/80 backdrop-blur-2xl rounded-t-[2rem] shadow-[0_-10px_40px_rgba(43,42,81,0.06)]">
+<button class="flex flex-col items-center justify-center bg-blue-50 text-blue-600 rounded-full w-12 h-12 scale-110 transition-all duration-300 ease-out">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 w-12 h-12 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 w-12 h-12 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-400 w-12 h-12 hover:text-blue-500 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</nav>
+</body></html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Collections | AZURE KINETIC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#859aff",
+              "outline": "#74739e",
+              "surface-tint": "#0846ed",
+              "surface-container-high": "#e2dfff",
+              "on-error": "#ffefef",
+              "secondary": "#545b6f",
+              "on-error-container": "#510017",
+              "error-container": "#f74b6d",
+              "on-tertiary-fixed-variant": "#6a1460",
+              "on-primary-fixed": "#000000",
+              "on-background": "#2b2a51",
+              "outline-variant": "#aba9d7",
+              "secondary-fixed": "#dbe2fa",
+              "background": "#f9f5ff",
+              "on-primary": "#f2f1ff",
+              "on-secondary-fixed": "#383f52",
+              "secondary-fixed-dim": "#cdd4eb",
+              "on-primary-container": "#001867",
+              "secondary-dim": "#484f63",
+              "on-surface-variant": "#585781",
+              "tertiary-dim": "#832c76",
+              "tertiary-fixed": "#f790e0",
+              "surface-dim": "#d2d0ff",
+              "surface-variant": "#dcd9ff",
+              "on-secondary-fixed-variant": "#545b6f",
+              "surface-container-low": "#f2efff",
+              "secondary-container": "#dbe2fa",
+              "on-tertiary": "#ffeef6",
+              "primary-dim": "#003cd3",
+              "primary": "#0846ed",
+              "tertiary-fixed-dim": "#e883d2",
+              "surface-container-highest": "#dcd9ff",
+              "on-secondary": "#f0f2ff",
+              "tertiary-container": "#f790e0",
+              "on-tertiary-fixed": "#380033",
+              "surface-bright": "#f9f5ff",
+              "primary-container": "#859aff",
+              "on-tertiary-container": "#5f0656",
+              "surface-container": "#e9e5ff",
+              "inverse-surface": "#0a082f",
+              "inverse-primary": "#6d88ff",
+              "surface": "#f9f5ff",
+              "inverse-on-surface": "#9a99c6",
+              "error-dim": "#a70138",
+              "primary-fixed-dim": "#718bff",
+              "error": "#b41340",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#2b2a51",
+              "on-secondary-container": "#4a5165",
+              "tertiary": "#913983",
+              "on-primary-fixed-variant": "#00207e"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f9f5ff;
+        color: #2b2a51;
+      }
+      h1, h2, h3, h4 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl no-border bg-gradient-to-b from-white to-transparent shadow-none">
+<div class="flex justify-between items-center w-full px-12 h-20 max-w-[1920px] mx-auto font-['Plus_Jakarta_Sans'] tracking-tight">
+<div class="text-2xl font-black tracking-tighter text-slate-900">
+                AZURE KINETIC
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#2E5BFF] border-b-2 border-[#2E5BFF] pb-1 font-bold transition-colors duration-300" href="#">Collections</a>
+<a class="text-slate-600 font-medium hover:text-[#2E5BFF] transition-colors duration-300" href="#">New Arrivals</a>
+<a class="text-slate-600 font-medium hover:text-[#2E5BFF] transition-colors duration-300" href="#">The Atelier</a>
+<a class="text-slate-600 font-medium hover:text-[#2E5BFF] transition-colors duration-300" href="#">Sustainability</a>
+<a class="text-slate-600 font-medium hover:text-[#2E5BFF] transition-colors duration-300" href="#">Archive</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-all" data-icon="shopping_bag">shopping_bag</button>
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-all" data-icon="favorite">favorite</button>
+<button class="material-symbols-outlined text-on-surface hover:text-primary transition-all" data-icon="person">person</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-12 max-w-[1920px] mx-auto">
+<!-- Breadcrumbs -->
+<div class="mb-10">
+<nav class="flex text-sm font-label uppercase tracking-widest text-on-surface-variant gap-3 items-center">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-xs" style="font-size: 14px;">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Catalog</a>
+<span class="material-symbols-outlined text-xs" style="font-size: 14px;">chevron_right</span>
+<span class="text-primary font-semibold">Collections 2024</span>
+</nav>
+<h1 class="text-5xl font-extrabold tracking-tighter mt-4 text-on-surface">The Kinetic Collection</h1>
+</div>
+<!-- Layout Wrapper: Sidebar + Content -->
+<div class="flex flex-col md:flex-row gap-16">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-72 flex-shrink-0">
+<div class="sticky top-32 space-y-10">
+<!-- Category Section -->
+<section>
+<h3 class="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-primary">Category</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-4 h-4 rounded-full border-2 border-outline group-hover:border-primary transition-colors"></div>
+<span class="text-sm font-medium text-on-surface-variant group-hover:text-on-surface transition-colors">Outerwear</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-4 h-4 rounded-full border-2 border-primary bg-primary flex items-center justify-center">
+<div class="w-1.5 h-1.5 rounded-full bg-white"></div>
+</div>
+<span class="text-sm font-semibold text-on-surface transition-colors">Knitwear</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-4 h-4 rounded-full border-2 border-outline group-hover:border-primary transition-colors"></div>
+<span class="text-sm font-medium text-on-surface-variant group-hover:text-on-surface transition-colors">Technical Bases</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="w-4 h-4 rounded-full border-2 border-outline group-hover:border-primary transition-colors"></div>
+<span class="text-sm font-medium text-on-surface-variant group-hover:text-on-surface transition-colors">Accessories</span>
+</label>
+</div>
+</section>
+<!-- Size Section -->
+<section>
+<h3 class="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-on-surface">Size</h3>
+<div class="flex flex-wrap gap-2">
+<button class="w-10 h-10 flex items-center justify-center text-xs font-bold rounded-lg bg-surface-container-low border border-transparent hover:border-primary transition-all">XS</button>
+<button class="w-10 h-10 flex items-center justify-center text-xs font-bold rounded-lg bg-primary text-on-primary shadow-lg shadow-primary/20 transition-all">S</button>
+<button class="w-10 h-10 flex items-center justify-center text-xs font-bold rounded-lg bg-surface-container-low border border-transparent hover:border-primary transition-all">M</button>
+<button class="w-10 h-10 flex items-center justify-center text-xs font-bold rounded-lg bg-surface-container-low border border-transparent hover:border-primary transition-all">L</button>
+<button class="w-10 h-10 flex items-center justify-center text-xs font-bold rounded-lg bg-surface-container-low border border-transparent hover:border-primary transition-all">XL</button>
+</div>
+</section>
+<!-- Sustainability Section -->
+<section class="p-6 rounded-2xl bg-surface-container-high/50 border border-outline-variant/10">
+<h3 class="text-xs font-bold uppercase tracking-[0.2em] mb-4 text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="eco">eco</span>
+                            Sustainability
+                        </h3>
+<div class="space-y-4">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+<span class="ms-3 text-sm font-medium text-on-surface">Bio-Based Materials</span>
+</label>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+<span class="ms-3 text-sm font-medium text-on-surface">Zero Waste Process</span>
+</label>
+</div>
+</section>
+<!-- Price Range -->
+<section>
+<h3 class="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-on-surface">Price Range</h3>
+<div class="px-2">
+<div class="h-1 bg-surface-container-high rounded-full relative">
+<div class="absolute left-0 right-1/4 h-full bg-primary rounded-full"></div>
+<div class="absolute left-0 w-4 h-4 bg-white border-2 border-primary rounded-full -top-1.5 cursor-pointer"></div>
+<div class="absolute right-1/4 w-4 h-4 bg-white border-2 border-primary rounded-full -top-1.5 cursor-pointer"></div>
+</div>
+<div class="flex justify-between mt-4 text-xs font-semibold text-on-surface-variant">
+<span>$150</span>
+<span>$1,200</span>
+</div>
+</div>
+</section>
+</div>
+</aside>
+<!-- Product Grid Area -->
+<div class="flex-grow">
+<!-- Top Utility Bar -->
+<div class="flex justify-between items-center mb-12 bg-surface-container-low rounded-2xl px-8 py-4">
+<p class="text-sm font-medium text-on-surface-variant uppercase tracking-widest">Showing <span class="text-primary font-bold">24</span> Articles</p>
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2">
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Sort By:</span>
+<select class="bg-transparent border-none text-sm font-bold text-on-surface focus:ring-0 cursor-pointer">
+<option>Newest Release</option>
+<option>Price: High to Low</option>
+<option>Price: Low to High</option>
+<option>Sustainability Score</option>
+</select>
+</div>
+<div class="flex gap-2">
+<button class="p-2 rounded-lg bg-white text-primary shadow-sm"><span class="material-symbols-outlined" data-icon="grid_view">grid_view</span></button>
+<button class="p-2 rounded-lg text-on-surface-variant hover:bg-white hover:text-primary transition-all"><span class="material-symbols-outlined" data-icon="view_day">view_day</span></button>
+</div>
+</div>
+</div>
+<!-- Bento-Inspired Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+<!-- Product Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-6 bg-surface-container-lowest">
+<img alt="Azure Kinetic Outerwear" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="minimalist studio fashion shot of a technical cobalt blue winter jacket on a modern model against a clean grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEydLRtrNoEWHimfNEj2A4d9v6dShJhEGdo1XziqzvOyhcEYgqaeIZhLitn6sG6eahMsa0gZwVXmSatromMoBiXJk198V_enGMaTpLDszE9kqTRfbThQj3vke0Dx9bVhZU3bh1YEvOzQ7-xS3N5ezLiwyU0qMegpN5NoYojOIe6HhTXVN5lJUpyBQlAns_flRrXOMwqehWxlTewFFT0pzfO1sGOgBsIZ2XRlYDASQ6phs4Rufjourrm9ccHryYztPbWG8PVnbsmvEV"/>
+<div class="absolute top-6 left-6 flex flex-col gap-2">
+<span class="bg-primary/90 text-on-primary text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full backdrop-blur-md">New In</span>
+<span class="bg-white/80 text-on-surface text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full backdrop-blur-md">Sustainability 9.8</span>
+</div>
+<button class="absolute bottom-6 right-6 w-12 h-12 rounded-full bg-white text-on-surface flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Technical Outerwear</p>
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">KINETIC SHIELD-01</h3>
+<p class="text-lg font-medium text-on-surface-variant">$840.00</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group cursor-pointer translate-y-8">
+<div class="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-6 bg-surface-container-lowest">
+<img alt="Azure Kinetic Knitwear" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="close up of premium woven texture of a charcoal grey sustainable wool sweater with intricate modern patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU6Vj6PofZ-d5Fb9op60nWk6F3lnaaOWKkNoQXmNnuKURGOyUpmwizyZbKl3F1aohoER1BnH-jNWehu8aZVgtqHNGP_p66AdIoL4FxILv_tWMFcujR6UdWL1Y2lXu3imv--GCpGiHE53DS6UmK7oOJdwzv7GaQbnDes130vnlmNO9p3vnaVVOocN8rhXAIijYZ3aPU-G4i3tdKZ6xcajsHaCgpU78EOGMUvoOXmShlCWw1NA_UDxxfw6eYQvTrGZr6q9pB2E4IOmKm"/>
+<div class="absolute top-6 left-6">
+<span class="bg-tertiary/90 text-on-primary text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full backdrop-blur-md">Sold Out</span>
+</div>
+<button class="absolute bottom-6 right-6 w-12 h-12 rounded-full bg-white text-on-surface flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Merino Fusion</p>
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">ATELIER TURTLENECK</h3>
+<p class="text-lg font-medium text-on-surface-variant">$320.00</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-6 bg-surface-container-lowest">
+<img alt="Azure Kinetic Leather" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="editorial shot of high-end black vegan leather trousers with sleek minimalist tailoring and metallic accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCMA_JZ4vYDBlojZVxuV_aYY71dn2b20NtK6FwcRcqNPCZXNcIf7klO1UDHsfA61VzXZkNbpkYKSKv-V--HgpIN0KwHl0pGmrVWWUvDcXkT3COmwYpDwhgXDRETXfJCdcQ_gosEMWjt08fy6dcAXt-nvs2uABnlRR-0th2E1-1RLMU44BNHaHBlWgFvfMU-KaTqvvb38WPIYYuOeAnFkGiM8fzqfEGDS5Dg6Qy-fGYW-OcJYwzQmBsjRzlNIP-qZvVIsSffJisCtXg"/>
+<button class="absolute bottom-6 right-6 w-12 h-12 rounded-full bg-white text-on-surface flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Biotech Apparel</p>
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">VEGAN FORM PANTS</h3>
+<p class="text-lg font-medium text-on-surface-variant">$450.00</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group cursor-pointer translate-y-8">
+<div class="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-6 bg-surface-container-lowest">
+<img alt="Azure Kinetic Technical" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="professional fashion photography of a model wearing a structured beige trench coat with oversized pockets and industrial belt details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu28E6eHaNsn1KuNU8ybXsxIAXnfN-ROxOQh2K_t-FRAuChbJRpr_lSDBcTFI_rsqeu6ixoChx2bdjvGE-RlqJGqB9I_VlUHtJ5a3MbIS6Cn_d-gsZSfu0E7_ken0oQr-FZa-qUmfWMI9v1vzLN09mPgG_y3or2MylNkDMeM5MlGuxWWdpsQQTcywalmVh8kcZu5ZfHOuL4cOX-PXl5S7vH3g4HyQe_qIQyzJ2NZXM1ikh20n70cXl6Y73vQK-FoPiCWS6em7mIUvR"/>
+<button class="absolute bottom-6 right-6 w-12 h-12 rounded-full bg-white text-on-surface flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Urban Exploration</p>
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">MONOLITH PARKA</h3>
+<p class="text-lg font-medium text-on-surface-variant">$1,150.00</p>
+</div>
+</div>
+<!-- Row 2 -->
+<!-- Product Card 5 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-6 bg-surface-container-lowest">
+<img alt="Azure Kinetic Basics" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="studio layout of high quality minimalist white organic cotton t-shirt with heavy weight fabric and boxy fit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDG4qQuenuhN-tzTHm2Ve9pE7wQEkvRxjad2lqGuVt_1pue2ahDwLKl96FIUxBLyAnyKj-qHhZKCDxsQgOCQJNkLpgI5juQvjRczj_NBSmHiqHUFQHdMckGfrmtHMpRfi5VQZ48x7Dk7yoKSMWLLuAC34oXxnpv-EMEQm7iDW4N9q7mU7Kk3t0_2NJG90rTizvX17n3dbCF2oOkARj-fqN69VrXkk0PiCg7ElkKsEM6GckHLYsYKGKSI_0xOCGzRk5RVkqWjhqSjgp"/>
+<button class="absolute bottom-6 right-6 w-12 h-12 rounded-full bg-white text-on-surface flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Essentials</p>
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">HEAVY CORE TEE</h3>
+<p class="text-lg font-medium text-on-surface-variant">$180.00</p>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group cursor-pointer translate-y-8">
+<div class="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-6 bg-surface-container-lowest">
+<img alt="Azure Kinetic Footwear" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="avant-garde technical sneakers in off-white and electric blue with complex mesh panels and chunky ergonomic soles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJWZKCmvJNjWxv225plX53j110v2vocFwy6rz6vM_GHcPL9Q1R00VjWnlH6qtiR-Ql_mxTMHMgKGO-6evzwQEyOIKbt5_ZK8vcBClb2ytA_IxjYFZs4vdL1eLFCU8XJ1rzBliFsH16HIxQQQoxfk_rJFYxOJJuZJ7nABCTNmJxTxmwPF-sMiJuAVEnFc2iLuBC64wxf4VFizO9qRZQEAb8Ll18m2Npv47kh1BcJpygI6qS5wVeyAW1iGt0Hxdh7IvXGZQAVgP-U_AZ"/>
+<button class="absolute bottom-6 right-6 w-12 h-12 rounded-full bg-white text-on-surface flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Footwear</p>
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">NEO-RUNNER V2</h3>
+<p class="text-lg font-medium text-on-surface-variant">$580.00</p>
+</div>
+</div>
+<!-- Product Card 7 -->
+<div class="group cursor-pointer">
+<div class="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-6 bg-surface-container-lowest">
+<img alt="Azure Kinetic Shirts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="sharp editorial image of a crisp tailored white technical shirt with hidden buttons and futuristic collar design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu83QXjvVrWvq3xBHh2h48Ux7siD4zTIZRyRRWWeseKJnFiLGHflFBptoGSNtocOo3St_GN7NqcVqQP9ydNavEDW_hRTFRmB1uzGS7Hh87XRVIEYLOelFEDalhOEl0yb6VMfI0awD_6YefnLN3yyxABzZMIu0Q-1dl8Sq2souB2z_xZNvMXenwNe1qESSKabtFLp8SyI4I-7aTNOt3EST-SxxNOsKmscEz_iU-2-sN_KmhhrMzNdCN2pxXtMfZ_d-54_Nkqzm_ot2P"/>
+<button class="absolute bottom-6 right-6 w-12 h-12 rounded-full bg-white text-on-surface flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Technical Base</p>
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">VECTOR SHIRT</h3>
+<p class="text-lg font-medium text-on-surface-variant">$295.00</p>
+</div>
+</div>
+<!-- Product Card 8 -->
+<div class="group cursor-pointer translate-y-8">
+<div class="relative overflow-hidden rounded-[2rem] aspect-[3/4] mb-6 bg-surface-container-lowest">
+<img alt="Azure Kinetic Archive" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="modern industrial style warehouse with models wearing layered techwear fashion in monochromatic tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3mok_que7XZTST_uIYW-9yBjzLWEuahzH29aK1vZsLO6ZCi-H8d_0W_X_fWNS_22K8TsbZ5whhYiQcM0BgG6ZzDTz79eZPmsHJQST2FNAReRG1mPNuRpUOzLHCmx6w1k3tSyYUb53nY4tJa1CDDFBgrzEO7L62gAYK1fGr4vwEFmb4i84RDJaZeXKet0P0kYMO62RhvTdWTnlPNA4_eNxG6fKFTXR31H92lG4CVy4OOwVeKK3rNfA6k5rfxAjHgX_hx6y44UBMBvK"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<button class="absolute bottom-6 right-6 w-12 h-12 rounded-full bg-white text-on-surface flex items-center justify-center opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Limited Release</p>
+<h3 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">KINETIC SHELL V.0</h3>
+<p class="text-lg font-medium text-on-surface-variant">$1,450.00</p>
+</div>
+</div>
+</div>
+<!-- Load More / Pagination -->
+<div class="mt-32 flex flex-col items-center gap-6">
+<button class="px-12 py-5 rounded-full bg-primary text-on-primary font-bold text-sm uppercase tracking-widest shadow-2xl shadow-primary/40 hover:scale-105 transition-all active:scale-95">
+                        Discover More
+                    </button>
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-[0.3em]">Showing 8 of 24 Articles</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[2rem] mt-20 tonal-shift bg-[#f2efff]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-[1920px] mx-auto font-['Plus_Jakarta_Sans'] text-sm uppercase tracking-widest">
+<div class="space-y-8 col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-slate-900">AZURE KINETIC</div>
+<p class="text-xs normal-case tracking-normal leading-relaxed text-slate-500 max-w-[200px]">
+                    Engineering the future of aesthetic utility. Every garment is a statement of technical precision and artistic expression.
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-black text-slate-900 mb-2">The Archive</h4>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Our Story</a>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Sustainability Report</a>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Atelier Process</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-black text-slate-900 mb-2">Concierge</h4>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Contact Us</a>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Shipping &amp; Returns</a>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Store Locator</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-black text-slate-900 mb-2">Legal</h4>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-slate-900 transition-all" href="#">Terms of Service</a>
+<div class="pt-8">
+<p class="text-[10px] text-slate-400 leading-tight">© 2024 AZURE KINETIC ATELIER. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
